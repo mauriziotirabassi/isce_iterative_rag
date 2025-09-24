@@ -1,4 +1,4 @@
-# Iterative Semantic with Cross Embedding (ISCE)
+# Iterative Semantic w/ Cross Embedding (ISCE)
 
 This repository contains a research notebook exploring a **novel method for multi-hop question answering**.  
 The method works entirely in **embedding space**: after each retrieval step, we algebraically update the query vector to remove already-covered information. We stop retrieving once the information gain plateaus, then pass the collected passages to a generative model to produce the final answer.

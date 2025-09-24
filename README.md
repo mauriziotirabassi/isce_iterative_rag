@@ -18,6 +18,7 @@ This avoids the need for a learned controller and makes multi-hop retrieval ligh
 
 - `isce.ipynb` — the main notebook with method, experiments, and results.  
 - Dataset used: HotpotQA (subset). Retrievable at https://beerqa.github.io/.
+- Images of the blueprint and logic in the notebook.
 
 ## Results (HotpotQA, dev subset)
 

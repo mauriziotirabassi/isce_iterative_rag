@@ -3,8 +3,6 @@
 This repository contains a research notebook exploring a **novel method for multi-hop question answering**.  
 The method works entirely in **embedding space**: after each retrieval step, we algebraically update the query vector to remove already-covered information. We stop retrieving once the information gain plateaus, then pass the collected passages to a generative model to produce the final answer.
 
----
-
 ## Key Idea
 
 - Embed the question with a sentence embedding model.  
@@ -16,21 +14,15 @@ The method works entirely in **embedding space**: after each retrieval step, we 
 
 This avoids the need for a learned controller and makes multi-hop retrieval lightweight and unsupervised. Instead of relying on supervision for when to “hop,” ISCE shows that **simple algebra in embedding space** can control multi-hop retrieval effectively.
 
----
-
 ## Repository Contents
 
 - `isce.ipynb` — the main notebook with method, experiments, and results.  
 - Dataset used: HotpotQA (subset).  
 
----
-
 ## Results (HotpotQA, dev subset)
 
 - Baseline RAG: **F1 ~0.45, EM ~0.38**  
 - ISCE variants: **F1 up to ~0.48, EM up to ~0.41**
-
----
 
 ## How to Use
 

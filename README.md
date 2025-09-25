@@ -8,7 +8,7 @@ The method works entirely in **embedding space**: after each retrieval step, we 
 The core principle is that the question already contains information about the necessary hops to be performed.
 
 - Embed the question with a sentence embedding model.  
-- Retrieve passages from a dense index (hnswlib).  
+- Retrieve passages from a dense index (hnswlib).
 - Update the query embedding after each hop:  
   - Subtract or adjust with the passage embedding to represent “remaining information.”  
 - Check if retrieval scores have plateaued (“semantic exhaustion”).  

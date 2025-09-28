@@ -26,9 +26,3 @@ This avoids the need for a learned controller and makes multi-hop retrieval ligh
 
 - Baseline RAG: **F1 ~0.45, EM ~0.38**  
 - ISCE variants: **F1 up to ~0.48, EM up to ~0.41**
-
-## How to Use
-
-1. Open the notebook `isce.ipynb`.  
-2. Run cells in order to reproduce the method and experiments.  
-3. The dataset (HotpotQA subset) needs to be available locally.  
